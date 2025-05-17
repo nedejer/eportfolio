@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
 
-*{
+* {
     font-family: "Lato", sans-serif;
     padding: 0;
     margin: 0;
@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, h7, span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
 }
 
 p{
@@ -30,11 +34,22 @@ li {
     flex: 1;
 }
 
+.container {
+    padding: 50px 0;
+}
+
 .row {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+}
 
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px ;
 }
  /* NAVIGATION BAR */
 
@@ -86,18 +101,92 @@ li {
     flex-direction: column;
  }
 
+ .about-me__info {
+    display: flex;
+    flex-direction: column ;
+ }
+
  .about-me__info--container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
  }
 
  .about-me__picture--mask {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .16);
+    margin-bottom: 28px;
  }
 
  .about-me__picture {
     width: 100%;
+    /* IMPROVING MY PICTURE */
+ transform: scale(1.25);
+ padding-top: 10px;
  }
+
+ .about-me__info--title {
+    margin-bottom: 16px;
+ }
+ .about-me__info--para {
+    font-size: 20px;
+    margin-bottom: 28px;
+ }
+ .about-me__link {
+    font-size: 20px;
+    padding: 16px;
+ } 
+
+ .about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+ }
+
+ .about-me__img {
+    width: 100%;
+ }
+
+ /* TECH STACK*/
+
+  .language__img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 3 00ms ease;
+  }
+
+  .language__img:hover {
+     filter: brightness(80%);
+     opacity: 0.85;
+     transform: scale(.9);
+  }
+
+.language {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+  .language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .language__list {
+    display: flex;
+
+  }
+
+  .language__name {
+    position: absolute;
+    bottom: 0;
+  } 
