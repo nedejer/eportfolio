@@ -158,7 +158,7 @@ section:nth-child(even) {
   .language__img {
     width: 100%;
     max-width: 100px;
-    transition: all 3 00ms ease;
+    transition: all 300ms ease;
   }
 
   .language:hover .language__img {
@@ -172,27 +172,31 @@ section:nth-child(even) {
     display: flex;
     justify-content: center;
     position: relative;
-    
 }
 
   .language__img--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 25px 16px;
   }
 
   .language__list {
     display: flex;
-
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .language__name {
-    position: absolute;
+    position:absolute;
     bottom: 0;
     transform: scale(0);
     transition: all 300ms ease;
+
   } 
 
   .language:hover .language__name {
     transform: scale(1);
+    opacity: 1;
   }
